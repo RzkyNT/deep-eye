@@ -30,7 +30,7 @@ class SmartBrowserTester:
         try:
             # Try to use Browser Use first (more powerful AI agent)
             from browser_use import Agent
-            from langchain_openai import ChatOpenAI
+            from browser_use.llm import ChatOpenAI
             
             # Get AI configuration
             ai_config = self.config.get('ai_providers', {}).get('openai', {})

@@ -40,7 +40,7 @@ class ReportGenerator:
         else:
             raise ValueError(f"Unsupported format: {format}")
 
-    def _safe_serialize(self, obj: Any):
+    def _safe_serialize(self, obj: any):
         """Recursively make data JSON-safe."""
         if isinstance(obj, (str, int, float, bool)) or obj is None:
             return obj
